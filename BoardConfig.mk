@@ -3,13 +3,13 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/Hisense/HS8929QC/BoardConfigVendor.mk
 
-TARGET_ARCH := arm
+TARGET_ARCH := arm64
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := unknown
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
+TARGET_BOARD_PLATFORM := msm8916
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 := armeabi-v7a
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a7
+TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
