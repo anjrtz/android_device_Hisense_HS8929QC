@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=kipper
-VENDOR=wileyfox
+DEVICE=HS8929QC
+VENDOR=Hisense
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

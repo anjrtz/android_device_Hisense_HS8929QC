@@ -12,24 +12,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/wileyfox/kipper/full_kipper.mk)
+$(call inherit-product, device/Hisense/HS8929QC/full_HS8929QC.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
-TARGET_BOARD_PLATFORM_VARIANT := msm8939
+TARGET_BOARD_PLATFORM_VARIANT := msm8929
 
-PRODUCT_NAME := cm_kipper
-BOARD_VENDOR := wileyfox
-PRODUCT_DEVICE := kipper
+PRODUCT_NAME := cm_HS8929QC
+BOARD_VENDOR := Hisense
+PRODUCT_DEVICE := HS8929QC
 
-PRODUCT_GMS_CLIENTID_BASE := android-wileyfox
+PRODUCT_GMS_CLIENTID_BASE := android-Hisense
 
-PRODUCT_MANUFACTURER := Wileyfox
-PRODUCT_MODEL := Wileyfox Storm
+PRODUCT_MANUFACTURER := Hisense
+PRODUCT_MODEL := Hisense L671
 
-PRODUCT_BRAND := Wileyfox
-TARGET_VENDOR := wileyfox
-TARGET_VENDOR_PRODUCT_NAME := Storm
-TARGET_VENDOR_DEVICE_NAME := kipper
+PRODUCT_BRAND := Hisense
+TARGET_VENDOR := Hisense
+TARGET_VENDOR_PRODUCT_NAME := L671
+TARGET_VENDOR_DEVICE_NAME := HS8929QC

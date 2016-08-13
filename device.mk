@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,16 +14,17 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit from msm8916-common
+#$(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
 
-# Inherit from HS8929QC device
-$(call inherit-product, device/Hisense/HS8929QC/device.mk)
+# Overlay
+#DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := HS8929QC
-PRODUCT_NAME := full_HS8929QC
-PRODUCT_BRAND := Hisense
-PRODUCT_MODEL := HS8929QC
-PRODUCT_MANUFACTURER := Hisense
+# Include package config fragments
+include device/Hisense/HS8929QC/device_HS8929QC.mk
+
+#$(call inherit-product-if-exists, vendor/Hisense/HS8929QC/HS8929QC-vendor.mk)
+
+
+
+
