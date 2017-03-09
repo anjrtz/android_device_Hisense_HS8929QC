@@ -20,6 +20,11 @@
 # Overlay
 #DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+PRODUCT_NAME := aosp_HS8929QC
+PRODUCT_DEVICE := HS8929QC
+PRODUCT_MODEL := Aosp on HS8929QC
+PRODUCT_MANUFACTURER := Hisense
+
 # Include package config fragments
 include device/Hisense/HS8929QC/device_HS8929QC.mk
 
